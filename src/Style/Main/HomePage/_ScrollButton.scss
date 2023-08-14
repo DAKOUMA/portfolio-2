@@ -1,0 +1,16 @@
+.scroll-button{
+    rotate: y 90deg;
+    animation: fall 2s forwards;
+    animation-delay: 6s;
+}
+
+@keyframes fall {
+    0%{
+        opacity: 0;
+        rotate: y 90deg;
+    }
+    100%{
+        opacity: 1;
+        rotate: y 0deg;
+    }
+}

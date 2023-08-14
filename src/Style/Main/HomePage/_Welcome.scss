@@ -1,0 +1,82 @@
+.violet{
+    margin-top: -1rem;
+    background-color: $violet;
+    animation: bars-violet 2s forwards;
+    animation-delay: 1s;
+}
+
+.welcomeRuban_green{
+    background-color: $green;
+    animation: bars-green 2.5s forwards;
+    animation-delay: 1s;
+}
+
+.worldRuban_green{
+    background-color: $green;
+    animation: bars-green 2.5s forwards;
+    animation-delay: 1s;
+}
+
+.text-welcome{
+    opacity: 0;
+    margin-bottom: -1.5rem;
+    position: relative;
+    z-index: 20;
+    animation: text-display 1s forwards;
+    animation-delay: 3s;
+}
+
+
+
+@keyframes bars-violet{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%
+    }
+}
+
+@keyframes bars-green{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%
+    }
+}
+
+
+@keyframes text-display{
+    from{
+        opacity: 0;;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .text-welcome{
+        font-size: 2rem;
+        margin-bottom: -1.2rem;
+    }
+
+    @keyframes bars-violet{
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 65%
+        }
+    }
+    
+    @keyframes bars-green{
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 68%
+        }
+    }
+}
