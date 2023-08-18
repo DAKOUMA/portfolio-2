@@ -29,9 +29,9 @@ function Welcome(params) {
     return (
         <div className=" h-1/3">
             <WelcomeRuban/>
-            <div className="my-8 text-center text-xl mt-20">
-                <p>TO</p>
-                <p>MY</p>
+            <div className="ToMy my-8 text-center text-xl mt-20">
+                <p className="ToMy">TO</p>
+                <p className="ToMy">MY</p>
             </div>
             <WorldRuban/>
         </div>

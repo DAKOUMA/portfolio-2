@@ -1,0 +1,212 @@
+.circle-shadow{
+    background-color: rgb(186, 255, 232);
+    box-shadow: inset 2px 2px 7px -2px;
+}
+
+.circle-image{
+    background-color: white;
+    box-shadow: 2px 2px 7px -2px;
+}
+
+.circle-white{
+    position: relative;
+    z-index: 3;
+}
+
+.circle-1{
+    > .circle-container {
+        animation: circle-1Animation 5s infinite 1s alternate ease-in-out;
+        > p{
+            width: max-content;
+            position: absolute;
+            translate: 60%;
+            animation: circle-1Animation-text 5s infinite 1s alternate ease-in-out ;
+            animation-delay: 1s;
+        }
+        > .circle-white{    
+            > .circle-shadow{
+                > .circle-image{
+                    animation: circle-1Animation-rotate 2s infinite linear;
+                    > img {
+                        src: '../../../Assets/Icons/png/figma.png';
+                    }
+                }
+            }
+        }
+    }
+}
+
+.circle-2{
+    > .circle-container {
+        animation: circle-2Animation 6s infinite alternate ease-in-out ;
+        > p{
+            width: max-content;
+            position: absolute;
+            translate: -120%;
+            animation: circle-2Animation-text 6s infinite alternate ease-in-out;
+        }
+        > .circle-white{
+
+            > .circle-shadow{
+                > .circle-image{
+                    animation: circle-3Animation-rotate 5s infinite linear alternate-reverse;
+                }
+            }
+        }
+    }
+}
+
+.circle-3{
+    > .circle-container {
+        animation: circle-3Animation 10s infinite 3s alternate ease-in-out;
+        > p{
+            width: max-content;
+            position: absolute;
+            translate: 60%;
+            animation: circle-1Animation-text 10s infinite ease-in-out;
+            animation-direction: alternate;
+            animation-delay: 3s;
+            &::after{
+                content: "abcdefg";
+                width: max-content;
+                position: absolute;
+                display: none;
+            }
+        }
+        > .circle-white{
+
+            > .circle-shadow{
+                > .circle-image{
+                    transform: matrix3d(10);
+                    animation: circle-3Animation-rotate 5s infinite linear alternate-reverse;
+                    animation-delay: 3s;
+                }
+            }
+        }
+    }
+}
+
+/**
+@keyframes circle-1Animation {
+    0%{
+        margin-left: 1.5rem;
+    }
+    30%{
+        width: auto;
+        margin-left: 1.5rem;
+    }
+    70%{
+        margin-left: 75%;
+    }
+    100%{
+        margin-left: 75%;
+    }
+}
+
+@keyframes circle-1Animation-rotate {
+    0%{
+        rotate: 0;
+        box-shadow: 2px 2px 7px -2px;
+    }
+    100%{
+        rotate: 1 3 1 360deg;
+        box-shadow: 2px 2px 7px -2px;
+    }
+}
+
+
+@keyframes circle-1Animation-text {
+    0%{
+        translate: 60%;
+    }
+    30%{
+        translate: 60%;
+    }
+    70%{
+        translate: -120%;
+    }
+    100%{
+        translate: -120%;
+    }
+}
+
+@keyframes circle-2Animation {
+    0%{
+        margin-left: 73%;
+    }
+    30%{
+        width: auto;
+        margin-left: 73%;
+    }
+    70%{
+        margin-left: 10%;
+    }
+    100%{
+        margin-left: 10%;
+    }
+}
+
+@keyframes circle-2Animation-text {
+    0%{
+        translate: -120%;
+    }
+    30%{
+        translate: -120%;
+    }
+    70%{
+        translate: 100%;
+    }
+    100%{
+        translate: 100%;
+    }
+}
+
+@keyframes circle-2Animation-rotate {
+    0%{
+        rotate: 0;
+        box-shadow: 2px 2px 7px -2px;
+    }
+    100%{
+        rotate: 3 2 3 360deg;
+        transform: scale(1.1);
+        box-shadow: 2px 2px 7px -2px;
+    }
+}
+
+@keyframes scale {
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 2;
+    }
+}
+
+
+
+@keyframes circle-3Animation {
+    0%{
+        margin-left: 2.5rem;
+    }
+    30%{
+        width: auto;
+        margin-left: 2.5rem;
+    }
+    70%{
+        margin-left: 70%;
+    }
+    100%{
+        margin-left: 70%;
+    }
+}
+
+@keyframes circle-3Animation-rotate {
+    0%{
+        rotate: 0;
+        box-shadow: 2px 2px 7px -2px;
+    }
+    100%{
+        rotate: 1 2 1 360deg;
+        box-shadow: 2px 2px 7px -2px;
+    }
+}**/

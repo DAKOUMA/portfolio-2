@@ -24,10 +24,10 @@ const whatsapp = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
      </svg>
 
 const home = <svg viewBox="0 0 24 24" fill="none"  xmlns="http://www.w3.org/2000/svg">
-    <path d="M19 10L19 20H9M5 20L5 10L12 3L15.5 6.5" stroke="#1CFFA0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M19 10L19 20H9M5 20L5 10L12 3L15.5 6.5" stroke="#1CFFA0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
  </svg>
 
-const arrow = <svg className="cursor-pointer arrow" width="30px" height="25px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path  d="M512 768l448-512H64z" fill="#1CFFA0" /></svg>
+const arrow = <svg className="cursor-pointer arrow" width="30px" height="25px" viewBox="0 0 1024 1024"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path  d="M512 768l448-512H64z" fill="#1CFFA0" /></svg>
 
 
     let icon ;

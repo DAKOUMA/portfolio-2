@@ -1,2 +1,17 @@
 @import "./ContactCard/ContactCard";
-@import "./RateMe/RateMe"
+@import "./RateMe/RateMe";
+
+.foot{
+    padding-bottom: 1rem;
+    position: static;
+    background-color: $violet;
+    place-self: end;
+    justify-content: space-around;
+    > div {
+        margin-top: 1rem;
+        > h1 {
+            font-weight: 500;
+            font-size: 1rem;
+        }
+    }
+}

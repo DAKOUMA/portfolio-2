@@ -1,2 +1,14 @@
 @import "./Bars";
-@import "./HomeIcon"
+@import "./HomeIcon";
+
+
+
+.dropDown{
+    right: -120%;
+    top: 120%;
+    transition: 500ms;
+}
+
+.open{
+    right: 0;
+}

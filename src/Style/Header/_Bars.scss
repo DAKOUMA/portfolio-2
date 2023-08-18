@@ -1,0 +1,23 @@
+.link{
+    color: $green;
+    cursor: pointer;
+    transition: 300ms;
+    &:hover{
+        scale: 1.1;
+    }
+}
+
+.linkDrop{
+    padding-right: 5px;
+    margin-top: 5px;
+    background-color: $violet;
+    border: solid $green 2px;
+    font-size: 1.3rem;
+    color: $green;
+    cursor: pointer;
+    transition: 300ms;
+    &:hover{
+        scale: 1.2;
+        translate: -20px;
+    }
+}

@@ -1,0 +1,13 @@
+.Stars{
+    > svg {
+        
+        transition: 400ms;
+        &:hover{
+            scale: 1.2;
+            fill: $violet;        
+        }
+        > path {
+            cursor: pointer;
+        }
+    }
+}

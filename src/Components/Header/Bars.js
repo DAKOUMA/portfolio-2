@@ -1,8 +1,10 @@
 import { Icon } from "../../Assets/Icon"
 
-function Bars() {
+
+
+function Bars(props) {
     return (
-        <div className="w-16 md:w-10">
+        <div className="w-12 md:hidden" onClick={props.toggleBars}>
             <Icon icon={'bar'}/>
         </div>
     )
