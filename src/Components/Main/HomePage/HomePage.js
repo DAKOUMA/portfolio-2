@@ -8,7 +8,7 @@ function HomePage(props) {
         <main className="homePage h-screen pt-36 DarkMode" ref={pageList[0]} >
             <Welcome/>
             <DiscoverText/>
-            <ScrollButton scroll={props.scroll}/>
+            <ScrollButton scrollTo={props.scrollTo}/>
         </main>
     )
 }

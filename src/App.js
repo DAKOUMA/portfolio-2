@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       <Header refe={pageList} scrollTo={scrollToPage}/>
-      <HomePage refe={pageList}/>
+      <HomePage refe={pageList} scrollTo={scrollToPage}/>
       <SkillsPage refe={pageList} scrollTo={scrollToSkills}/>
       <WorkPage refe={pageList}/>
       <ContactMe refe={pageList}/>
