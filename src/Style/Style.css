@@ -54,6 +54,30 @@
   width: 1.5rem;
 }
 
+.social-link:hover > svg {
+  transition: 200ms;
+  scale: 1.1;
+}
+.social-link:hover > svg > path {
+  fill: rgb(255, 238, 126);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.589);
+}
+
+.QrWhatsapp {
+  margin: auto;
+  width: 70%;
+}
+
+@media (min-width: 768px) {
+  .QrWhatsapp {
+    margin: auto;
+    width: 16rem;
+    height: 30rem;
+  }
+}
 .Stars > svg {
   transition: 400ms;
 }
